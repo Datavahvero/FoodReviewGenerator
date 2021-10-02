@@ -1,1 +1,1 @@
-﻿# MessageGenerator
+﻿# FoodReviewGenerator
