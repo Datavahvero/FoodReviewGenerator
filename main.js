@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 const foods = ['stew', 'pizza', 'pudding', 'cookie', 'biscuit', 'peanutbutter', 'pasta', 'soup', 'bread', 'beans', 'spaghetti', 'chocolate', 'cracker', 'jam', 'butter', 'steak', 'cigarette', 'fruit', 'vinegums', 'meat', 'patty', 'meatloaf', 'chicken', 'patee', 'candy', 'macaroni', 'coffee'];
 const words = ['almost', 'certainly', 'really', 'probably', 'maybe'];
@@ -20,3 +21,8 @@ const messageGenerator = (arr1, arr2, arr3, arr4) => {
 };
 
 console.log(messageGenerator(foods, words, TasteAdjectives, verbs));
+=======
+//testi
+//lisää testi
+// uutta settiä
+>>>>>>> 7fd06fbb76a0bfd25e5673b94e763305b4b6126d
