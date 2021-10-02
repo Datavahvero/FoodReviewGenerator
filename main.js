@@ -1,7 +1,7 @@
 
 const foods = ['stew', 'pizza', 'pudding', 'cookie', 'biscuit', 'peanutbutter', 'pasta', 'soup', 'bread', 'beans', 'spaghetti', 'chocolate', 'cracker', 'jam', 'butter', 'steak', 'cigarette', 'fruit', 'vinegums', 'meat', 'patty', 'meatloaf', 'chicken', 'patee', 'candy', 'macaroni', 'coffee'];
 const words = ['almost', 'certainly', 'really', 'probably', 'maybe'];
-const tasteAdjectives = ['acidic', 'bitter', 'cool', 'creamy', 'delicious', 'disgusting', 'fresh', 'greasy', 'juicy', 'hot', 'moldy', 'nutritious', 'nutty', 'putrid', 'rancid', 'ripe', 'rotten', 'salty', 'savory', 'sour', 'spicy', 'spoiled', 'sweet', 'tangy', 'tart', 'tasteless', 'tasty', 'tasy', 'yummy', 'nice', 'unpleasant'];
+const tasteAdjectives = ['acidic', 'bitter', 'cool', 'creamy', 'delicious', 'disgusting', 'fresh', 'greasy', 'juicy', 'hot', 'moldy', 'nutritious', 'nutty', 'putrid', 'rancid', 'ripe', 'rotten', 'salty', 'savory', 'sour', 'spicy', 'spoiled', 'sweet', 'tangy', 'tart', 'tasteless', 'tasty', 'tasty', 'yummy', 'nice', 'unpleasant'];
 const verbs = ['like', 'love', 'hate', "don't know how i feel about", 'dislike']
 
 const getRandomInt = max => Math.floor(Math.random() * max.length);
@@ -19,4 +19,4 @@ const messageGenerator = (arr1, arr2, arr3, arr4) => {
   }
 };
 
-console.log(messageGenerator(foods, words, TasteAdjectives, verbs));
+const sendMessage = () => document.getElementById("message").innerHTML = messageGenerator(foods, words, tasteAdjectives, verbs);
