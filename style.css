@@ -1,63 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-body {
-  font-family: "Poppins", sans-serif;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: radial-gradient(
-      circle at 17% 77%,
-      rgba(17, 17, 17, 0.04) 0%,
-      rgba(17, 17, 17, 0.04) 50%,
-      rgba(197, 197, 197, 0.04) 50%,
-      rgba(197, 197, 197, 0.04) 100%
-    ),
-    radial-gradient(
-      circle at 26% 17%,
-      rgba(64, 64, 64, 0.04) 0%,
-      rgba(64, 64, 64, 0.04) 50%,
-      rgba(244, 244, 244, 0.04) 50%,
-      rgba(244, 244, 244, 0.04) 100%
-    ),
-    radial-gradient(
-      circle at 44% 60%,
-      rgba(177, 177, 177, 0.04) 0%,
-      rgba(177, 177, 177, 0.04) 50%,
-      rgba(187, 187, 187, 0.04) 50%,
-      rgba(187, 187, 187, 0.04) 100%
-    ),
-    linear-gradient(19deg, rgb(28, 117, 250), rgb(34, 2, 159));
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+
+/* Set Colors */
+:root {
+  --bg-color-lg: radial-gradient(circle at 85% 1%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 52%,transparent 52%, transparent 100%),linear-gradient(135deg, rgb(37, 56, 222),rgb(96, 189, 244));
+  --bg-color-dk: radial-gradient(circle at 90% 24%, rgba(209, 209, 209,0.04) 0%, rgba(209, 209, 209,0.04) 50%,rgba(160, 160, 160,0.04) 50%, rgba(160, 160, 160,0.04) 100%),radial-gradient(circle at 91% 63%, rgba(45, 45, 45,0.04) 0%, rgba(45, 45, 45,0.04) 50%,rgba(87, 87, 87,0.04) 50%, rgba(87, 87, 87,0.04) 100%),radial-gradient(circle at 17% 2%, rgba(124, 124, 124,0.04) 0%, rgba(124, 124, 124,0.04) 50%,rgba(117, 117, 117,0.04) 50%, rgba(117, 117, 117,0.04) 100%),linear-gradient(88deg, rgb(33, 20, 105),rgb(1, 15, 13));
+  --card-lg-bg-color: #e2f3f5;
+  --card-dk-bg-color: #2d1172;
+  --button-color-lg: #3d5af1;
+  --button-color-dk: #3f178a;
+  --text-color-lg: #000000;
+  --text-color-dk: #ffffff;
+  --h-color-lg: #22eaaa;
+  --h-color-dk: #ffffff;
+  --link-color: #ff304f;
+  --heafoo-bg-color-lg: #1e44ff;
 }
+
+/* Set Text */
 
 h1 {
   font-size: 3em;
   font-weight: bold;
+  color: var(--h-color-lg);
+}
+
+h2 {
+  color: var(--h-color-lg);
 }
 
 p {
   font-size: 1.5em;
+  color: var(--text-color-lg);
 }
 
-.card {
-  height: 30rem;
-  width: 55rem;
+a.link {
+  color: var(--link-color-dk);
+  text-decoration: none;
+}
+
+a.link:hover {
+  color: var(--link-color);
+}
+
+/* Set Background */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-image: var(--bg-color-lg);
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: whitesmoke;
-  padding: 50px;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.513),
-    0 6px 20px 0 rgba(0, 0, 0, 0.561);
 }
 
-button {
+/* Set Top & Bottom of the Page */
+
+header, footer {
+  background-color: var(--heafoo-bg-color-lg);
+  text-align: center;
+  width: 100%;
+  padding: 1em 0 1em 0;
+}
+
+header {
+  box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.3);
+}
+
+footer {
+  box-shadow: 0px -14px 15px 0px rgba(0,0,0,0.3);
+}
+
+/* Set Card in the Middle */
+
+main {
+  width: 45em;
+  height: 25em;
+  background-color: var(--card-lg-bg-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5em;
+  box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.3);
+}
+
+button.nice {
   width: 6em;
   font-size: 1em;
   font-weight: bold;
@@ -65,21 +102,10 @@ button {
   padding: 15px;
   border-style: none;
   border-radius: 10px;
-  background-color: #3d5af1;
+  background-color: var(--button-color-lg);
   color: white;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition-duration: 0.4s;
+  box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.3);
   cursor: pointer;
-}
-
-button:hover
- {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.589),
-    0 17px 50px 0 rgba(0, 0, 0, 0.493);
-  background-color: whitesmoke;
-  color: #3d5af1;
-  border: solid 1px #3d5af1;
-  transition: 800ms;
 }
 
 img {
@@ -88,60 +114,95 @@ img {
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 800px) {
-  .card {
-    height: 35rem;
-    width: 20rem;
-  }
+/* Set media querys to make site responsive to most screens */
 
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-  }
+@media only screen and (max-width: 900px) {
+  main {
+    width: 40em;
+    height: 25em;
+    padding: 2em;
+  }  
 }
 
-@media only screen and (max-width: 650px) {
-  .card {
-    height: 35rem;
-    width: 20rem;
-  }
+@media only screen and (max-width: 720px) {
+  main {
+    width: 30em;
+    height: 25em;
+    padding: 2em;
+  }  
 }
 
-@media only screen and (max-width: 500px) {
-  .card {
-    height: 30rem;
-    width: 15rem;
-  }
+@media only screen and (max-width: 600px) {
 
   h1 {
     font-size: 2em;
-    font-weight: bold;
   }
 
-  p {
-    font-size: 1.3em;
+  main {
+    width: 20em;
+    height: 25em;
+    padding: 2em;
   }
-}
-
-@media only screen and (max-width: 400px) {
-  .card {
-    height: 25rem;
-    width: 13rem;
-  }
-
-  h1 {
-    font-size: 1.8em;
-    font-weight: bold;
-  }
-
-  p {
-    font-size: 1.1em;
-  }
-
+  
   img {
     width: 150px;
     height: 150px;
     border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+
+  main {
+    width: 20em;
+    height: 25em;
+    padding: 2em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  main {
+    width: 15em;
+    height: 25em;
+    padding: 2em;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+
+  h1 {
+    font-size: 1.2em;
+  }
+  
+  h2 {
+    font-size: 1em;
+  }
+
+  main {
+    width: 10em;
+    height: 25em;
+    padding: 2em;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+
+  main {
+    width: 8em;
+    height: 25em;
+    padding: 2em;
   }
 }
