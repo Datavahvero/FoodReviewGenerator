@@ -1,8 +1,7 @@
-
 const foods = ['stew', 'pizza', 'pudding', 'cookie', 'biscuit', 'peanutbutter', 'pasta', 'soup', 'bread', 'beans', 'spaghetti', 'chocolate', 'cracker', 'jam', 'butter', 'steak', 'cigarette', 'fruit', 'vinegums', 'meat', 'patty', 'meatloaf', 'chicken', 'patee', 'candy', 'macaroni', 'coffee'];
-const words = ['almost', 'certainly', 'really', 'probably', 'maybe'];
-const tasteAdjectives = ['acidic', 'bitter', 'cool', 'creamy', 'delicious', 'disgusting', 'fresh', 'greasy', 'juicy', 'hot', 'moldy', 'nutritious', 'nutty', 'putrid', 'rancid', 'ripe', 'rotten', 'salty', 'savory', 'sour', 'spicy', 'spoiled', 'sweet', 'tangy', 'tart', 'tasteless', 'tasty', 'tasty', 'yummy', 'nice', 'unpleasant'];
-const verbs = ['like', 'love', 'hate', "don't know how i feel about", 'dislike']
+const words = ['almost', 'certainly', 'really', 'probably', 'maybe', 'utmost', 'nearly', 'practically', 'unquestionally', 'surely', 'definitely', 'undeniably', 'evidently', 'conclusively', 'likely', 'no doubt', 'possibly', 'perhaps', 'presumably'];
+const tasteAdjectives = ['acidic', 'bitter', 'cool', 'creamy', 'delicious', 'disgusting', 'fresh', 'greasy', 'juicy', 'hot', 'moldy', 'nutritious', 'nutty', 'putrid', 'rancid', 'ripe', 'rotten', 'salty', 'savory', 'sour', 'spicy', 'spoiled', 'sweet', 'tangy', 'tart', 'tasteless', 'tasty', 'tasty', 'yummy', 'nice', 'unpleasant', 'palatable', 'tasty', 'toothsome', 'succulent', 'enjoyable', 'mouthwatering', 'appetizing'];
+const verbs = ['like', 'love', 'hate', "don't know how i feel about", 'dislike', 'worship', 'adore', 'despise', 'dislikegreatly', 'be revolted by', 'be repelled by', 'disrelish', 'make out of']
 
 const getRandomInt = max => Math.floor(Math.random() * max.length);
 
